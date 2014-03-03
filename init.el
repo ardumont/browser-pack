@@ -13,6 +13,4 @@
 ;;       browse-url-generic-program "/usr/bin/google-chrome"
 ;;       browse-url-generic-args '("--no-proxy-server"))
 
-(global-set-key (kbd "C-c C-b u") 'browse-url-at-point)
-
 ;;; browser-pack.el ends here
