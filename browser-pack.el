@@ -10,8 +10,7 @@
 (require 'browse-url)
 
 (setq browse-url-browser-function 'browse-url-firefox
-      browse-url-generic-program "/usr/bin/firefox")
-
+      browse-url-generic-program "firefox")
 
 (provide 'browser-pack)
 ;;; browser-pack.el ends here
