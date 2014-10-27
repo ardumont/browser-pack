@@ -5,7 +5,7 @@
 ;;; Code:
 
 (require 'install-packages-pack)
-(install-packs '(w3m))
+(install-packages-pack/install-packs '(w3m))
 
 (require 'browse-url)
 
