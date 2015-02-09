@@ -5,12 +5,15 @@
 ;;; Code:
 
 (require 'install-packages-pack)
-(install-packages-pack/install-packs '(w3m))
+(install-packages-pack/install-packs '(w3m
+                                       restclient))
 
 (require 'browse-url)
 
 (setq browse-url-browser-function 'browse-url-firefox
       browse-url-generic-program "firefox")
+
+(require 'restclient)
 
 (provide 'browser-pack)
 ;;; browser-pack.el ends here
