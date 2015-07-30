@@ -4,16 +4,14 @@
 
 ;;; Code:
 
-(require 'install-packages-pack)
-(install-packages-pack/install-packs '(w3m
-                                       restclient))
+(use-package w3m)
 
-(require 'browse-url)
+(use-package browse-url
+  :config
+  (custom-set-variables '(browse-url-browser-function 'browse-url-firefox)
+                        '(browse-url-generic-program "firefox")))
 
-(setq browse-url-browser-function 'browse-url-firefox
-      browse-url-generic-program "firefox")
-
-(require 'restclient)
+(use-package restclient)
 
 (provide 'browser-pack)
 ;;; browser-pack.el ends here
