@@ -7,8 +7,8 @@
 (require 'w3m)
 
 (require 'browse-url)
-(custom-set-variables '(browse-url-browser-function 'browse-url-firefox)
-                      '(browse-url-generic-program "firefox"))
+(custom-set-variables '(browse-url-browser-function 'browse-url-generic)
+                      '(browse-url-generic-program (or (getenv "BROWSER") "qutebrowser")))
 
 (require 'restclient)
 
